@@ -16,11 +16,16 @@ dotenv.config()
 
 const PORT = process.env.PORT;
 const __dirname = path.resolve();
+const allowedOrigins = [
+    "http://localhost:5173",
+    "https://cryptochats.vercel.app",
+    "https://bxmwtl3g-5173.inc1.devtunnels.ms"
+]
 
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: allowedOrigins,
     credentials: true,
 }))
 
