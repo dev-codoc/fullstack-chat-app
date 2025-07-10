@@ -19,7 +19,8 @@ const __dirname = path.resolve();
 const allowedOrigins = [
     "http://localhost:5173",
     "https://cryptochats.vercel.app",
-    "https://bxmwtl3g-5173.inc1.devtunnels.ms"
+    "https://bxmwtl3g-5173.inc1.devtunnels.ms",
+    "https://chatz-gyef.onrender.com"
 ]
 
 app.use(express.json())
